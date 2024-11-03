@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="83296db7-3949-4046-a57a-1d7cdf1c1566" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/backend/src/app/address.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/shelter.entity.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/shelters.service.spec.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/shelters.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/rating.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/review.service.spec.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/backend/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/backend/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/backend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/backend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/dist/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/review.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/review.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/shelter.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/shelter.entity.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,11 +48,15 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Jest.ReviewService.create.executor": "Run",
+    "Jest.ReviewService.executor": "Run",
+    "Jest.ReviewService.findAll.should return an array of shelters.executor": "Run",
+    "Jest.ReviewService.update.executor": "Run",
     "Jest.UsersService.executor": "Run",
     "Jest.UsersService.findByProximity.executor": "Run",
     "Jest.UsersService.findOne.should return a shelter by ID.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "MN.Shelter-Model",
+    "git-widget-placeholder": "9---review-model-and-CRUD-routes",
     "last_opened_file_path": "/Users/maxnorman/Documents/GitHub/bagly",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -77,7 +75,59 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.UsersService">
+  <component name="RunManager" selected="Jest.ReviewService">
+    <configuration name="ReviewService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/backend/src/app/review.service.spec.ts" />
+      <test-names>
+        <test-name value="ReviewService" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReviewService.create" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/backend/src/app/review.service.spec.ts" />
+      <test-names>
+        <test-name value="ReviewService" />
+        <test-name value="create" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReviewService.findAll.should return an array of shelters" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/backend/src/app/review.service.spec.ts" />
+      <test-names>
+        <test-name value="ReviewService" />
+        <test-name value="findAll" />
+        <test-name value="should return an array of shelters" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="ReviewService.update" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
+      <working-dir value="$PROJECT_DIR$/backend" />
+      <envs />
+      <scope-kind value="SUITE" />
+      <test-file value="$PROJECT_DIR$/backend/src/app/review.service.spec.ts" />
+      <test-names>
+        <test-name value="ReviewService" />
+        <test-name value="update" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="UsersService" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <jest-package value="$PROJECT_DIR$/node_modules/jest" />
@@ -90,45 +140,20 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="UsersService.findByProximity" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/backend" />
-      <envs />
-      <scope-kind value="SUITE" />
-      <test-file value="$PROJECT_DIR$/backend/src/app/shelters.service.spec.ts" />
-      <test-names>
-        <test-name value="UsersService" />
-        <test-name value="findByProximity" />
-      </test-names>
-      <method v="2" />
-    </configuration>
-    <configuration name="UsersService.findOne.should return a shelter by ID" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <jest-package value="$PROJECT_DIR$/node_modules/jest" />
-      <working-dir value="$PROJECT_DIR$/backend" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/backend/src/app/shelters.service.spec.ts" />
-      <test-names>
-        <test-name value="UsersService" />
-        <test-name value="findOne" />
-        <test-name value="should return a shelter by ID" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Jest.ReviewService" />
+        <item itemvalue="Jest.ReviewService.update" />
+        <item itemvalue="Jest.ReviewService.create" />
+        <item itemvalue="Jest.ReviewService.findAll.should return an array of shelters" />
         <item itemvalue="Jest.UsersService" />
-        <item itemvalue="Jest.UsersService.findByProximity" />
-        <item itemvalue="Jest.UsersService.findOne.should return a shelter by ID" />
       </list>
     </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-WS-242.21829.149" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.22855.79" />
       </set>
     </attachedChunks>
   </component>
@@ -145,6 +170,7 @@
       <workItem from="1726692317931" duration="11223000" />
       <workItem from="1727035342629" duration="784000" />
       <workItem from="1727219373230" duration="1286000" />
+      <workItem from="1730576730077" duration="5183000" />
     </task>
     <servers />
   </component>
